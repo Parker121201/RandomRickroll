@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Random Rickroll",
+    "version": "1.0",
+    "description": "Replace a random image on any website you visit with a Rickroll gif",
+    "permissions" : [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+        "js": ["scripts/content.js"],
+        "matches": [
+            "*://*/"
+        ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "images/rickRollGif.gif" ],
+            "matches": [ "https://*/*" ]
+        }
+    ],
+    "action": {
+        "default_popup": "options/options.html"
+    }
+}

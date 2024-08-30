@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Random Rickroll",
     "version": "1.0",
-    "description": "Replace a random image on any website you visit with a Rickroll gif",
+    "description": "Replace a random image on any website you visit with a Rickroll gif.",
     "permissions" : [
         "storage"
     ],
@@ -10,7 +10,9 @@
         {
         "js": ["scripts/content.js"],
         "matches": [
-            "*://*/"
+            "*://*/",
+            "http://*/*",
+            "https://*/*"
         ]
         }
     ],

@@ -5,26 +5,35 @@
         <link rel="stylesheet" href="options.css">
     </head>
     <body>
+        <!-- <div id="header_section">
+            <h2>Random Rickroll</h2>
+            <img id="header_gif" src="../images/rickRollGif.gif">
+        </div> -->
+        <div id="parent_container">
+            <h2>Settings</h2>
 
-        <div class="switch_section">
-            <h2>Replace images</h2>
-            <input id="enabled" class="toggle" type="checkbox">
-            <!-- <input id="enabled" type="checkbox"> -->
-        </div>
-
-        <div class="">
-            <h2>Change number of Rickrolls</h2>
-            <div>
-                <button id="decrement">-</button>
-                <p id="counter">1</p>
-                <button id="increment">+</button>
-                <button id="reset">Reset</button>
+        
+            <div class="toggle_switch_section">
+                <h3>Replace images</h3>
+                <input id="enabled" class="toggle" type="checkbox">
             </div>
+
+            <div>
+                <h3>Change number of Rickrolls</h3>
+                <div id="counter_section">
+                    <button class="secondary_button small_button" id="decrement" >-</button>
+                    <p id="counter">1</p>
+                    <button id="increment" class="secondary_button small_button">+</button>
+                </div>
+                <button class="secondary_button" id="reset">Reset Count</button>
+            </div>
+            
+            <div id="save_and_status">
+                <button id="save">Save</button>
+                <div id="status"></div>
+            </div>
+        
         </div>
-
-        <div id="status"></div>
-        <button id="save">Save</button>
-
         <script src="options.js"></script>
     </body>
 </html>

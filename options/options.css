@@ -80,13 +80,22 @@ h2 {
     margin-bottom: 15px;
 }
 
-.toggle_switch_section {
-    /* align-content: left; */
-}
+/* .toggle_switch_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 #counter_section {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#reset_button_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #counter {
@@ -106,10 +115,11 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
 /* Spacing & Alignment */
 
 /* Status & Save Button */
-#status {
+.status_text {
     margin-top:10px;
     font-size: 0.9em;
     color: #888;
